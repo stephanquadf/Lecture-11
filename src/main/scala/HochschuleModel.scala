@@ -66,7 +66,7 @@ object UniversityRegistry {
   val course1 = Course("Programming", professor1)
   val course2 = Course("Linear Algebra", professor2)
 
-  val room1 = Room("A101")
+  val room1 = Room("A110")
   val room2 = Room("B202")
 
   val booking1: (Course, Room) = (course1, room1)
