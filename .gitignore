@@ -1,0 +1,20 @@
+# Scala / sbt / Mill build output
+target/
+out/
+.scala-build/
+*.class
+*.tasty
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Scala build server and generated documentation
+.bsp/
+docs/
+
+# Editor and OS files
+.vscode/
+.DS_Store
