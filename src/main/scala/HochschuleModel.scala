@@ -5,7 +5,7 @@ enum DegreeProgram {
 case class Professor(name: String)
 case class Student(name: String, degreeProgram: DegreeProgram)
 case class Course(name: String, professor: Professor)
-case class Room(name: String)
+case class Rom(name: String)
 
 /** Verwaltet unveränderlich die Einschreibungen von Studierenden in Kurse.
   *
@@ -66,11 +66,11 @@ object UniversityRegistry {
   val course1 = Course("Programming", professor1)
   val course2 = Course("Linear Algebra", professor2)
 
-  val room1 = Room("A110")
-  val room2 = Room("B202")
+  val room1 = Rom("A110")
+  val room2 = Rom("B202")
 
-  val booking1: (Course, Room) = (course1, room1)
-  val booking2: (Course, Room) = (course2, room2)
+  val booking1: (Course, Rom) = (course1, room1)
+  val booking2: (Course, Rom) = (course2, room2)
 }
 
 @main def hochschuleModel(): Unit = {
