@@ -1,5 +1,7 @@
 # Scala / sbt / Mill build output
 target/
+project/target/
+project/project/target/
 out/
 .scala-build/
 *.class

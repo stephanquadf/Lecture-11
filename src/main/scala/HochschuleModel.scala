@@ -7,7 +7,13 @@ case class Student(name: String, degreeProgram: DegreeProgram)
 case class Course(name: String, professor: Professor)
 case class Rom(name: String)
 
-/** Verwaltet unveränderlich die Einschreibungen von Studierenden in Kurse.
+/**
+  * Map: Zuordnung von Kurs zu Menge der eingeschriebenen Studierenden.
+  * Set: eindeutige Menge von Studierenden.
+  * enrollments speichert die Einschreibungen unveränderlich.
+  * getOrElse liefert den Wert oder einen Standardwert, z. B. leere Menge.
+  *
+  * Verwaltet unveränderlich die Einschreibungen von Studierenden in Kurse.
   *
   * @param enrollments Zuordnung jedes Kurses zu den darin eingeschriebenen Studierenden
   * @example {{{
