@@ -5,7 +5,7 @@ enum DegreeProgram {
 case class Professor(name: String)
 case class Student(name: String, degreeProgram: DegreeProgram)
 case class Course(name: String, professor: Professor)
-case class Room(name: String)
+case class Raum(name: String)
 
 /** Verwaltet unveränderlich die Einschreibungen von Studierenden in Kurse.
   *
