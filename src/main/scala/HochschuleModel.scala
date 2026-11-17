@@ -66,11 +66,11 @@ object UniversityRegistry {
   val course1 = Course("Programming", professor1)
   val course2 = Course("Linear Algebra", professor2)
 
-  val room1 = Room("A110")
-  val room2 = Room("B202")
+  val room1 = Raum("A110")
+  val room2 = Raum("B202")
 
-  val booking1: (Course, Room) = (course1, room1)
-  val booking2: (Course, Room) = (course2, room2)
+  val booking1: (Course, Raum) = (course1, room1)
+  val booking2: (Course, Raum) = (course2, room2)
 }
 
 @main def hochschuleModel(): Unit = {
